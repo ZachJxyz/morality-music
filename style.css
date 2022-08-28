@@ -1,0 +1,41 @@
+body, html {
+    background-color: black;
+    color:white;
+}
+
+.navbar-top {
+    margin-bottom: 25px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.col {
+    margin: 25px;
+}
+
+.card {
+    color: black;
+}
+
+.card-img-top {
+    justify-content: center;
+}
+
+.container-card-image {
+    margin-bottom: 25px;
+}
+
+.container-carousel {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    color:black;
+}
+
+.bg-dark {
+    background-color: black;
+}
