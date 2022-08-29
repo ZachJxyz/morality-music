@@ -3,8 +3,13 @@ body, html {
     color:white;
 }
 
-.navbar-top {
-    margin-bottom: 25px;
+.navbar {
+    display: flex;
+    margin: 0;
+}
+
+.logo-push {
+    margin-right: auto;
 }
 
 .row {
