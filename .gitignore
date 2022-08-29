@@ -1,2 +1,4 @@
+# dumb files to ignore
 notes.txt
 morality-music.code-workspace
+.DS_Store
