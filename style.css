@@ -1,46 +1,86 @@
-body, html {
+/********************************************************************** 
+*                          GENERAL STUFF 
+**********************************************************************/
+
+body {
     background-color: black;
-    color:white;
+    margin: auto 0;
 }
+
+.zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.placeholder {
+    color: black;
+}
+
+/********************************************************************** 
+*                           NAVIGATION 
+**********************************************************************/
 
 .navbar {
     display: flex;
     margin: 0;
 }
 
-.logo-push {
-    margin-right: auto;
-}
+/********************************************************************** 
+*                               COVER 
+**********************************************************************/
 
-.row {
+.container {
+    display:flex;
+    align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
-.col {
-    margin: 25px;
+.cover {
+    width: 30rem;
 }
 
-.card {
-    color: black;
+/********************************************************************** 
+*                            PROJECT GRID 
+**********************************************************************/
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
 }
 
-.card-img-top {
-    justify-content: center;
+.box {
+    margin: 20px;
 }
 
-.container-card-image {
-    margin-bottom: 25px;
+.box > img {
+    width: 100%;
 }
 
-.container-carousel {
-    margin-bottom: 20px;
-}
+/********************************************************************** 
+*                               FOOTER
+**********************************************************************/
 
-footer {
-    margin-top: 30px;
-    color:black;
-}
 
-.bg-dark {
-    background-color: black;
+/***********************************************************************
+*  Yellow Background
+**********************************************************************/
+.yellow{
+    background: #d6a94d; /* Old browsers */
+    background: -moz-linear-gradient(top, #d6a94d 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6a94d), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #d6a94d 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #d6a94d 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #d6a94d 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #d6a94d 0%,#febf04 100%); /* W3C */
 }
