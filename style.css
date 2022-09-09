@@ -89,6 +89,137 @@ body {
 }
 
 /********************************************************************** 
+*                            PRICING 
+**********************************************************************/
+
+.pricing-table {
+    height: 100%;
+    padding: 4px;
+    width: 100%;
+    color: white;
+  }
+  
+  .flex-container {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .direction-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .pricing-table-grid {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(auto-fit,minmax(312px,312px));
+    -ms-grid-columns: (minmax(312px,312px))[auto-fit];
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    justify-self: start;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .price-column {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 12px;
+    color: #fff;
+    padding: 30px 32px 24px;
+    width: 312px;
+  }
+
+  
+  .price-column-text-and-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+  
+  .price-column-about-the-product {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .price-column-price-container-height-aligner {
+    display: flex;
+    justify-content: flex-start;
+    height: 115px;
+    margin-bottom: 20px;
+  }
+  
+  .price-column-name {
+    margin-bottom: 12px;
+  }
+  
+  .price-column-name-text {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .price-column-description {
+    height: 100px;
+    opacity: .7;
+    font-size: 14px;
+  }
+  
+  .price-column-price {
+    margin-right: 4px;
+  }
+  
+  .price-column-price-text {
+    font-size:36px;
+    font-weight: 700;
+    margin-right: 5px;
+  }
+  
+  .price-column-interval {
+    opacity:.7;
+  }
+  
+  .price-column-interval-text {
+    font-size: 13px;
+    opacity: .7;
+    line-height: normal;
+  }
+  
+  .price-column-about-the-product, .price-column-content, .price-column-feature-list-container, .price-and-button {
+    width: 100%;
+  }
+  
+  .price-column-feature-list-header {
+    margin-bottom: 10px;
+  }
+  
+  .price-column-feature-list {
+    padding: none;
+    line-height: 2.5;
+  }
+  
+  .price-column-check-container {
+    margin-right: 15px;
+  }
+  
+  hr {
+    opacity: 1;
+    color: #febf04;
+    width: 50%;
+    border-width: 5px;
+  }
+
+/********************************************************************** 
 *                               FOOTER
 **********************************************************************/
 
