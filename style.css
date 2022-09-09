@@ -11,8 +11,6 @@ body {
 
 .zone {
     cursor:pointer;
-    /* color:#FFF; */
-    /* font-size:2em; */
     transition: all 0.3s linear;
 }
 
