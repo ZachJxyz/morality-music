@@ -11,8 +11,8 @@ body {
 
 .zone {
     cursor:pointer;
-    color:#FFF;
-    font-size:2em;
+    /* color:#FFF; */
+    /* font-size:2em; */
     transition: all 0.3s linear;
 }
 
@@ -69,6 +69,15 @@ body {
 
 .box > img {
     width: 100%;
+}
+
+.card-title {
+    font-size: 2em;
+    /* color: black; */
+}
+
+.card-text {
+    /* color: black; */
 }
 
 /********************************************************************** 
