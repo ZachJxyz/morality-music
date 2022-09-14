@@ -9,6 +9,11 @@ body {
     background-color: black;
 }
 
+.gradient {
+  /* background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(77, 77, 77), rgb(255, 255, 255)); */
+  /* border-radius: 15px; */
+}
+
 .zone {
     cursor:pointer;
     transition: all 0.3s linear;
@@ -44,7 +49,7 @@ body {
     display:flex;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 50vh;
 }
 
 .cover {
@@ -57,7 +62,7 @@ body {
 
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
     gap: 20px;
 }
 
@@ -82,8 +87,17 @@ body {
 *                            TESTIMONIALS 
 **********************************************************************/
 
+.testimonials {
+  width: 90%;
+  background-color: grey;
+}
+
+
 .d-block {
-    max-width: 90%;
+  background-color: grey;
+  border-radius: 50%;
+  max-width: 7rem;
+  z-index: 8;
 }
 
 /********************************************************************** 
