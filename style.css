@@ -7,10 +7,11 @@ html {
 
 body {
     background-color: black;
+    width: 100%;
 }
 
 .gradient {
-  /* background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(77, 77, 77), rgb(255, 255, 255)); */
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(77, 77, 77), rgb(255, 255, 255));
   /* border-radius: 15px; */
 }
 
@@ -30,6 +31,16 @@ body {
     color: black;
 }
 
+.container-carousel {
+  
+}
+
+.container-body-card {
+  background: linear-gradient(to bottom, rgb(0, 0, 0), 
+  rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 
+  rgb(50, 50, 50));
+}
+
 /********************************************************************** 
 *                           NAVIGATION 
 **********************************************************************/
@@ -39,6 +50,21 @@ body {
     margin: 0;
     color: white;
     background-color: black;
+}
+
+.contact-btn {
+  overflow:hidden;
+  text-decoration:none;
+  cursor:pointer;
+  all: unset;
+  padding: 8px 0px;
+}
+
+.calendly {
+  text-decoration: none;
+  color: default;
+  --bs-link-color: clear;
+  --bs-link-hover-color: clear;
 }
 
 /********************************************************************** 
@@ -54,6 +80,26 @@ body {
 
 .cover {
     width: 30rem;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  max-width: 100%;
+  background: url('./images/hero-img.jpg') no-repeat;
+  background-size: 100%;
+}
+
+.hero-devprogram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  max-width: 100%;
+  background: url('./images/dev-program.jpg') no-repeat;
+  background-size: 100%;
 }
 
 /********************************************************************** 
@@ -74,13 +120,24 @@ body {
     width: 100%;
 }
 
+.card-body {
+  align-content: center;
+}
+
 .card-title {
-    font-size: 2em;
-    /* color: black; */
+  font-size: 2em;
+  text-align: center;
+  /* color: black; */
 }
 
 .card-text {
+  text-align: center;
     /* color: black; */
+}
+
+.btn-project {
+  display: flex;
+  justify-content: center;
 }
 
 /********************************************************************** 
@@ -88,21 +145,32 @@ body {
 **********************************************************************/
 
 .testimonials {
-  width: 90%;
-  background-color: grey;
+  background-color: rgb(50, 50, 50);
 }
 
+.carousel-inner {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  /* max-width: 30%; */
+}
 
 .d-block {
   background-color: grey;
   border-radius: 50%;
   max-width: 7rem;
-  z-index: 8;
+
 }
 
 /********************************************************************** 
 *                            PRICING 
 **********************************************************************/
+
+.logic {
+  background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(0, 0, 0), rgb(0, 0, 0));
+}
 
 .pricing-table {
     height: 100%;
@@ -268,6 +336,157 @@ footer {
     display:flex;
     align-items: center;
     justify-content: center;
+}
+
+.artist-container {
+  display:grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+  grid-template-rows: 1fr;
+}
+
+.zone2 {
+  cursor:pointer;
+  /* display:inline-block; */
+  text-align: center;
+  font-size:10em;
+  border-radius:4px;
+  /* border:1px solid #bbb; */
+  transition: all 0.3s linear;
+}
+
+/***********************************************************************
+*  Gallery
+**********************************************************************/
+
+/* .gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  grid-template-rows: 1fr;
+} */
+
+.new-gallery {
+  /* grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); */
+  margin: 30px;
+}
+
+.gallery-zone {
+  cursor:pointer;
+  justify-content: center;
+  text-align: center;
+  font-size:2em;
+  transition: all 0.3s linear;
+  background-color: grey;
+  width: 100%;
+  height: 150px;
+  background: red;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+  border: 5px solid #bbb;
+  width: 100%;
+}
+
+.col:hover {
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/***********************************************************************
+*  Partners
+**********************************************************************/
+.partners {
+  margin-top: 25px;
+  font-size: 7em;
+}
+
+
+.marquee {
+  overflow: hidden;
+  white-space: wrap;
+  animation: marquee 10s linear infinite;
+  width: 70%;
+  margin: 0 auto;
+  /* background-color: grey; */
+}
+
+.marquee-content {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.item-collection {
+  position: relative;
+  left: 0%;
+  animation: swap 10s linear infinite;
+}
+
+/* @keyframes swap {
+  0%, 50% {
+    left: 0%;
+  }
+  
+  50.01%,
+  100% {
+    left: 100%;
+  }
+} */
+
+.items {
+  display: inline-block;
+  height: auto;
+  vertical-align: top;
+  margin-left: 15px;
+}
+
+/* Transition */
+
+/* @keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+  100% {
+    transform: translateX(-100%)
+  }
+} */
+
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+ .green{
+  background: #56B870; /* Old browsers */
+  background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+  background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+*  Red Background
+**********************************************************************/
+.red{
+  background: #C655BE; /* Old browsers */
+  background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+  background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
 }
 
 /***********************************************************************
