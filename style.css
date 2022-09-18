@@ -369,7 +369,6 @@ footer {
   /* grid-template-columns: repeat(auto-fill, minmax(50%, 1fr)); */
   margin: 30px;
   display: grid;
-  background-color: grey;
 }
 
 .gallery-zone {
