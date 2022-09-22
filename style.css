@@ -16,8 +16,10 @@ body {
 }
 
 .zone {
-    cursor:pointer;
-    transition: all 0.3s linear;
+  cursor:pointer;
+  transition: all 0.3s linear;
+  -webkit-cursor:pointer;
+  -webkit-transition: all 0.3s linear;
 }
 
 .zone:hover {
@@ -253,6 +255,11 @@ body {
     border-color: rgb(248, 199, 41);
     text-align: center;
     margin-bottom: 25px;
+    -webkit-line-height: 1.15;
+    -webkit-background-color: rgb(248, 199, 41);
+    -webkit-border-color: rgb(248, 199, 41);
+    -webkit-text-align: center;
+    -webkit-margin-bottom: 25px;
   }
 
   .button:hover {
