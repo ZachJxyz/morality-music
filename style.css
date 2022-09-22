@@ -2,16 +2,20 @@
 *                          GENERAL STUFF 
 **********************************************************************/
 html {
-    margin: auto 0;
+  margin: auto 0;
+  -webkit-margin: auto 0;
 }
 
 body {
-    background-color: black;
-    width: 100%;
+  background-color: black;
+  width: 100%;
+  -webkit-background-color: black;
+  -webkit-width: 100%;
 }
 
 .gradient {
   background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(77, 77, 77), rgb(255, 255, 255));
+  -webkit-background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(77, 77, 77), rgb(255, 255, 255));
   /* border-radius: 15px; */
 }
 
@@ -23,22 +27,22 @@ body {
 }
 
 .zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .placeholder {
-    color: black;
-}
-
-.container-carousel {
-  
+  color: black;
+  -webkit-color: black;
 }
 
 .container-body-card {
   background: linear-gradient(to bottom, rgb(0, 0, 0), 
+  rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 
+  rgb(50, 50, 50));
+  -webkit-background: linear-gradient(to bottom, rgb(0, 0, 0), 
   rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 
   rgb(50, 50, 50));
 }
@@ -48,10 +52,14 @@ body {
 **********************************************************************/
 
 .navbar {
-    display: flex;
-    margin: 0;
-    color: white;
-    background-color: black;
+  display: flex;
+  margin: 0;
+  color: white;
+  background-color: black;
+  -webkit-display: flex;
+  -webkit-margin: 0;
+  -webkit-color: white;
+  -webkit-background-color: black;
 }
 
 .contact-btn {
@@ -60,6 +68,11 @@ body {
   cursor:pointer;
   all: unset;
   padding: 8px 0px;
+  -webkit-overflow:hidden;
+  -webkit-text-decoration:none;
+  -webkit-cursor:pointer;
+  -webkit-all: unset;
+  -webkit-padding: 8px 0px;
 }
 
 .calendly {
@@ -74,14 +87,19 @@ body {
 **********************************************************************/
 
 .container {
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  -webkit-display:flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-height: 50vh;
 }
 
 .cover {
-    width: 30rem;
+  width: 30rem;
+  -webkit-width: 30rem;
 }
 
 .hero-section {
@@ -92,6 +110,13 @@ body {
   max-width: 100%;
   background: url('./images/hero-img.jpg') no-repeat;
   background-size: 100%;
+  /* -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-height: 50vh;
+  -webkit-max-width: 100%;
+  -webkit-background: url('./images/hero-img.jpg') no-repeat;
+  -webkit-background-size: 100%; */
 }
 
 .hero-devprogram {
@@ -103,6 +128,14 @@ body {
   background: url('./images/dev-program.jpg') no-repeat;
   background-size: 100%;
   margin-bottom: 0;
+  /* -webkit-display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  -webkit-height: 50vh;
+  -webkit-max-width: 100%;
+  -webkit-background: url('./images/dev-program.jpg') no-repeat;
+  -webkit-background-size: 100%;
+  -webkit-margin-bottom: 0; */
 }
 
 /********************************************************************** 
@@ -110,43 +143,51 @@ body {
 **********************************************************************/
 
 .grid-wrapper {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
-    gap: 20px;
+  display: grid;
+  gap: 20px;
+  -webkit-display: grid;
+  -webkit-gap: 20px;
 }
 
 .box {
-    margin: 20px;
+  margin: 20px;
+  -webkit-margin: 20px;
 }
 
 .box > img {
-    width: 100%;
+  width: 100%;
+  -webkit-width: 100%;
 }
 
 .card {
   height: auto;
+  -webkit-height: auto;
 }
 
 .card-body {
   align-content: center;
-  justify-content: center;;
-  /* height: 350px; */
+  justify-content: center;
+  -webkit-align-content: center;
+  -webkit-justify-content: center;
 }
 
 .card-title {
   font-size: 2em;
   text-align: center;
-  /* color: black; */
+  -webkit-font-size: 2em;
+  -webkit-text-align: center;
 }
 
 .card-text {
   text-align: center;
-    /* color: black; */
+  -webkit-text-align: center;
 }
 
 .btn-project {
   display: flex;
   justify-content: center;
+  -webkit-display: flex;
+  -webkit-justify-content: center;
 }
 
 /********************************************************************** 
@@ -155,22 +196,32 @@ body {
 
 .testimonials {
   background-color: rgb(50, 50, 50);
+  -webkit-background-color: rgb(50, 50, 50);
 }
 
 .carousel-inner {
   display: flex;
   align-items: center;
+  -webkit-display: flex;
+  -webkit-align-items: center;
 }
 
 .row {
   /* max-width: 30%; */
 }
 
+.gumroad {
+  width: 100%;
+  -webkit-width: 100%;
+}
+
 .d-block {
   background-color: grey;
   border-radius: 25%;
   max-width: 7rem;
-
+  -webkit-background-color: grey;
+  -webkit-border-radius: 25%;
+  -webkit-max-width: 7rem;
 }
 
 /********************************************************************** 
@@ -179,13 +230,18 @@ body {
 
 .logic {
   background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(0, 0, 0), rgb(0, 0, 0));
+  -webkit-background: linear-gradient(to bottom, rgb(50, 50, 50), rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
 .pricing-table {
-    height: 100%;
-    padding: 4px;
-    width: 100%;
-    color: white;
+  height: 100%;
+  padding: 4px;
+  width: 100%;
+  color: white;
+  -webkit-height: 100%;
+  -webkit-padding: 4px;
+  -webkit-width: 100%;
+  -webkit-color: white;
   }
   
   .flex-container {
